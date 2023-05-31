@@ -9,6 +9,12 @@ TagManager:
   - Destroyer
   - MiniWorldCamera
   - Water
+  - FxTemporaire
+  - PotionBlue
+  - PotionPurple
+  - PotionGreen
+  - PotionRed
+  - PotionYellow
   layers:
   - Default
   - TransparentFX

@@ -288,6 +288,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5888803167949890130, guid: 4d7410c1eab856e4c8f6afd3c3b8ddd8, type: 3}
   m_PrefabInstance: {fileID: 39268005}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &57774893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1337469745986048801, guid: afaabb5b469650e49811da7049f7ea8f, type: 3}
+  m_PrefabInstance: {fileID: 481314202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &57774894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1337469745986048800, guid: afaabb5b469650e49811da7049f7ea8f, type: 3}
+  m_PrefabInstance: {fileID: 481314202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &57774899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57774893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee209b88bc0fbb54d98394ab1c5e7d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wristTransform: {fileID: 57774894}
+  wristInclination: 45
+  isPouring: 0
 --- !u!1001 &69803512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -900,9 +925,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 73.718
       objectReference: {fileID: 0}
+    - target: {fileID: 5848249329641235508, guid: 2a2656f75741c254f843b39f2ce1cf43, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5848298932013718212, guid: 2a2656f75741c254f843b39f2ce1cf43, type: 3}
       propertyPath: m_Name
       value: GPVFX_POTION D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848298932013718212, guid: 2a2656f75741c254f843b39f2ce1cf43, type: 3}
+      propertyPath: m_TagString
+      value: PotionYellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
@@ -1799,6 +1832,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7023753529688522609, guid: 616fdaa7dbff40e4f91c695be15f9f4f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 616fdaa7dbff40e4f91c695be15f9f4f, type: 3}
@@ -2211,9 +2248,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2074903196589249461, guid: 0b41e947c5f556941a5ec3a48002a2a0, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2075774014924152187, guid: 0b41e947c5f556941a5ec3a48002a2a0, type: 3}
       propertyPath: m_Name
       value: GPVFX_POTION E
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075774014924152187, guid: 0b41e947c5f556941a5ec3a48002a2a0, type: 3}
+      propertyPath: m_TagString
+      value: PotionPurple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
@@ -3308,9 +3353,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 166023104193697766, guid: e013c739d4709d24281fd798111a7f26, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 166425987670634144, guid: e013c739d4709d24281fd798111a7f26, type: 3}
       propertyPath: m_Name
       value: GPVFX_POTION B
+      objectReference: {fileID: 0}
+    - target: {fileID: 166425987670634144, guid: e013c739d4709d24281fd798111a7f26, type: 3}
+      propertyPath: m_TagString
+      value: PotionGreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
@@ -3782,6 +3835,10 @@ PrefabInstance:
     - target: {fileID: 785931949570831675, guid: afaabb5b469650e49811da7049f7ea8f, type: 3}
       propertyPath: m_Name
       value: Complete XR Origin Set Up Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 785931949570831675, guid: afaabb5b469650e49811da7049f7ea8f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6266714457555868837, guid: afaabb5b469650e49811da7049f7ea8f, type: 3}
       propertyPath: m_RootOrder
@@ -4702,6 +4759,14 @@ PrefabInstance:
     - target: {fileID: 7607925466200485079, guid: 2409db5753239ed418019481eefd8744, type: 3}
       propertyPath: m_Name
       value: GPVFX_POTION C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607925466200485079, guid: 2409db5753239ed418019481eefd8744, type: 3}
+      propertyPath: m_TagString
+      value: PotionBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607949302510588491, guid: 2409db5753239ed418019481eefd8744, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7609012439997476079, guid: 2409db5753239ed418019481eefd8744, type: 3}
       propertyPath: m_RootOrder
@@ -5938,6 +6003,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3982924094957581591, guid: 82accf89168587c43958a3181175d51f, type: 3}
   m_PrefabInstance: {fileID: 723010900}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &739952621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739952624}
+  - component: {fileID: 739952623}
+  - component: {fileID: 739952622}
+  m_Layer: 0
+  m_Name: CauldronTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &739952622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739952621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6663bcb3a132970448f53df7325cc0e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionPouringR: {fileID: 57774899}
+  potionPouringL: {fileID: 1327187774}
+--- !u!136 &739952623
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739952621}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.53
+  m_Height: 3.37
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &739952624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739952621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.56, y: 2.86, z: -0.078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &763581579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8022,9 +8148,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.536
       objectReference: {fileID: 0}
+    - target: {fileID: 5848249329641235508, guid: 2a2656f75741c254f843b39f2ce1cf43, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5848298932013718212, guid: 2a2656f75741c254f843b39f2ce1cf43, type: 3}
       propertyPath: m_Name
       value: GPVFX_POTION D
+      objectReference: {fileID: 0}
+    - target: {fileID: 5848298932013718212, guid: 2a2656f75741c254f843b39f2ce1cf43, type: 3}
+      propertyPath: m_TagString
+      value: PotionYellow
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
@@ -9140,6 +9274,14 @@ PrefabInstance:
     - target: {fileID: 1440218317543065827, guid: dbf69421e748dfd4d879e5ba8f729ec7, type: 3}
       propertyPath: m_Name
       value: GPVFX_POTION A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440218317543065827, guid: dbf69421e748dfd4d879e5ba8f729ec7, type: 3}
+      propertyPath: m_TagString
+      value: PotionRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440748921608873723, guid: dbf69421e748dfd4d879e5ba8f729ec7, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
@@ -10957,6 +11099,31 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1327187768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1337469745608610782, guid: afaabb5b469650e49811da7049f7ea8f, type: 3}
+  m_PrefabInstance: {fileID: 481314202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1327187769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1337469745608610753, guid: afaabb5b469650e49811da7049f7ea8f, type: 3}
+  m_PrefabInstance: {fileID: 481314202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1327187774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327187768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee209b88bc0fbb54d98394ab1c5e7d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wristTransform: {fileID: 1327187769}
+  wristInclination: 45
+  isPouring: 0
 --- !u!1001 &1354742903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13626,6 +13793,14 @@ PrefabInstance:
     - target: {fileID: 7607925466200485079, guid: 2409db5753239ed418019481eefd8744, type: 3}
       propertyPath: m_Name
       value: GPVFX_POTION C
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607925466200485079, guid: 2409db5753239ed418019481eefd8744, type: 3}
+      propertyPath: m_TagString
+      value: PotionBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607949302510588491, guid: 2409db5753239ed418019481eefd8744, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7609012439997476079, guid: 2409db5753239ed418019481eefd8744, type: 3}
       propertyPath: m_RootOrder
