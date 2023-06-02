@@ -6,6 +6,7 @@ using UnityEngine;
 public class CauldronGetPotion : MonoBehaviour
 {
     public bool isPouring;
+    public PotionManager potionManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,18 +26,23 @@ public class CauldronGetPotion : MonoBehaviour
         {
             case 0:
                 Debug.Log("Pouring potion Blue");
+                potionManager.GetPotion(0);
                 break;
             case 1:
                 Debug.Log("Pouring potion Purple");
+                potionManager.GetPotion(1);
                 break;
             case 2:
                 Debug.Log("Pouring potion Yellow");
+                potionManager.GetPotion(2);
                 break;
             case 3:
                 Debug.Log("Pouring potion Red");
+                potionManager.GetPotion(3);
                 break;
             case 4:
                 Debug.Log("Pouring potion Green");
+                potionManager.GetPotion(4);
                 break;
             default:
                 break;
