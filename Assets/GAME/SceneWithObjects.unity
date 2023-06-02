@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11272599, g: 0.2815876, b: 0.70917785, a: 1}
+  m_IndirectSpecularColor: {r: 0.11270009, g: 0.28155762, b: 0.7091776, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -220,6 +220,10 @@ PrefabInstance:
     - {fileID: 8086387305966538636, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 2053748162692178416, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 8086387305966538627, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 1969469524633213849, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 7245576621132640050, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 568725486144050798, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 2761534126313180220, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
 --- !u!4 &24134746 stripped
@@ -1350,7 +1354,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 2dbefc75de1eefe40b7500796e0c0d23, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 49eb3c8adf90c4946aad0c56e30a42c1, type: 2}
+      objectReference: {fileID: 2100000, guid: b9d04edb84dd79340b027304466dad23, type: 2}
     - target: {fileID: 919132149155446097, guid: 2dbefc75de1eefe40b7500796e0c0d23, type: 3}
       propertyPath: m_Name
       value: PaginaDerecha
@@ -1953,6 +1957,10 @@ PrefabInstance:
     - {fileID: 8086387305966538636, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 2053748162692178416, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 8086387305966538627, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 1969469524633213849, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 7245576621132640050, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 568725486144050798, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 2761534126313180220, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
 --- !u!4 &245293699 stripped
@@ -5682,7 +5690,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 2dbefc75de1eefe40b7500796e0c0d23, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 49eb3c8adf90c4946aad0c56e30a42c1, type: 2}
+      objectReference: {fileID: 2100000, guid: ec3d16e64457b474d90099aeadda6d6f, type: 2}
     - target: {fileID: 919132149155446097, guid: 2dbefc75de1eefe40b7500796e0c0d23, type: 3}
       propertyPath: m_Name
       value: PaginaIzquierda
@@ -6206,6 +6214,10 @@ PrefabInstance:
     - {fileID: 8086387305966538636, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 2053748162692178416, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 8086387305966538627, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 1969469524633213849, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 7245576621132640050, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 568725486144050798, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 2761534126313180220, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
 --- !u!4 &797264560 stripped
@@ -7006,6 +7018,10 @@ PrefabInstance:
     - {fileID: 8086387305966538636, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 2053748162692178416, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 8086387305966538627, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 1969469524633213849, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 7245576621132640050, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 568725486144050798, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 2761534126313180220, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
 --- !u!1001 &912304416
@@ -10820,6 +10836,10 @@ PrefabInstance:
     - {fileID: 8086387305966538636, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 2053748162692178416, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 8086387305966538627, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 1969469524633213849, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 7245576621132640050, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 568725486144050798, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 2761534126313180220, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
 --- !u!1001 &1422343051
@@ -10987,6 +11007,10 @@ PrefabInstance:
     - {fileID: 8086387305966538636, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 2053748162692178416, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 8086387305966538627, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 1969469524633213849, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 7245576621132640050, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 568725486144050798, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 2761534126313180220, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
 --- !u!1001 &1451893696
@@ -11409,7 +11433,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e140ac720eb2eff41af29c217d5f139e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.544
+  m_Volume: 0.388
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16351,6 +16375,10 @@ PrefabInstance:
     - {fileID: 8086387305966538636, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 2053748162692178416, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     - {fileID: 8086387305966538627, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 1969469524633213849, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 7245576621132640050, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 568725486144050798, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
+    - {fileID: 2761534126313180220, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 406313eb2f2a53b46b4a34fabff640fb, type: 3}
 --- !u!1001 &2111751340
