@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class CauldronGetPotion : MonoBehaviour
 {
-    public PotionPouring potionPouringR;
-    public PotionPouring potionPouringL;
+    public bool isPouring;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,27 +45,27 @@ public class CauldronGetPotion : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "PotionBlue" && (potionPouringR.isPouring || potionPouringL.isPouring))
+        if(other.tag == "PotionBlue" && isPouring)
         {
             PourPotion(0);
         }
 
-        if (other.tag == "PotionPurple" && (potionPouringR.isPouring || potionPouringL.isPouring))
+        if (other.tag == "PotionPurple" && isPouring)
         {
             PourPotion(1);
         }
 
-        if (other.tag == "PotionYellow" && (potionPouringR.isPouring || potionPouringL.isPouring))
+        if (other.tag == "PotionYellow" && isPouring)
         {
             PourPotion(2);
         }
 
-        if (other.tag == "PotionRed" && (potionPouringR.isPouring || potionPouringL.isPouring))
+        if (other.tag == "PotionRed" && isPouring)
         {
             PourPotion(3);
         }
 
-        if (other.tag == "PotionGreen" && (potionPouringR.isPouring || potionPouringL.isPouring))
+        if (other.tag == "PotionGreen" && isPouring)
         {
             PourPotion(4);
         }

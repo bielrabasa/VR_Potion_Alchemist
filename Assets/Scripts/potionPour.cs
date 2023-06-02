@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class potionPour : MonoBehaviour
 {
+    public CauldronGetPotion CauldronTrigger;
     
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,11 @@ public class potionPour : MonoBehaviour
 
         if (Vector3.Dot(transform.up, Vector3.down) > 0)
         {
-            Debug.Log("Bieeeeen");
+            CauldronTrigger.isPouring = true;
+        }
+        else
+        {
+            CauldronTrigger.isPouring = false;
         }
     }
 }
