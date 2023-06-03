@@ -18,12 +18,12 @@ public class PotionManager : MonoBehaviour
     //bool potionBlue, potionPurple, potionYellow, potionRed, potionGreen;
     int currentPotion;
 
-    Color blue = new Color(78, 190, 172);
-    Color purple = new Color(196, 57, 207);
-    Color yellow = new Color(212, 212, 55);
-    Color red = new Color(166, 29, 29);
-    Color green = new Color(28, 168, 51);
-    Color skin = new Color(226, 171, 125);
+    Color blue = new Color(0.31f, 0.75f, 0.67f);
+    Color purple = new Color(0.77f, 0.22f, 0.81f);
+    Color yellow = new Color(0.83f, 0.83f, 0.22f);
+    Color red = new Color(0.95f, 0.11f, 0.11f);
+    Color green = new Color(0.11f, 0.66f, 0.20f);
+    Color skin = new Color(0.89f, 0.67f, 0.49f);
 
     // Start is called before the first frame update
     void Start()
@@ -213,75 +213,49 @@ public class PotionManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "DryBranch")
-        {
-            other.gameObject.SetActive(false);
-            other.gameObject.GetComponent<Transform>().position = other.gameObject.GetComponent<Ingredient>().initialTransform.position;
-            other.gameObject.GetComponent<Transform>().rotation = other.gameObject.GetComponent<Ingredient>().initialTransform.rotation;
+        bool correctIngredient = false;
 
+        if (other.CompareTag("DryBranch"))
+        {
             DryBranch.SetActive(true);
-
-            other.gameObject.SetActive(true);
+            correctIngredient = true;
         }
-        if (other.tag == "Skull")
+        else if (other.CompareTag("Skull"))
         {
-            other.gameObject.SetActive(false);
-            other.gameObject.GetComponent<Transform>().position = other.gameObject.GetComponent<Ingredient>().initialTransform.position;
-            other.gameObject.GetComponent<Transform>().rotation = other.gameObject.GetComponent<Ingredient>().initialTransform.rotation;
-
             Skull.SetActive(true);
-
-            other.gameObject.SetActive(true);
+            correctIngredient = true;
         }
-        if (other.tag == "Feather")
+        else if (other.CompareTag("Feather"))
         {
-            other.gameObject.SetActive(false);
-            other.gameObject.GetComponent<Transform>().position = other.gameObject.GetComponent<Ingredient>().initialTransform.position;
-            other.gameObject.GetComponent<Transform>().rotation = other.gameObject.GetComponent<Ingredient>().initialTransform.rotation;
-
             Feather.SetActive(true);
-
-            other.gameObject.SetActive(true);
+            correctIngredient = true;
         }
-        if (other.tag == "Bean")
+        else if (other.CompareTag("Bean"))
         {
-            other.gameObject.SetActive(false);
-            other.gameObject.GetComponent<Transform>().position = other.gameObject.GetComponent<Ingredient>().initialTransform.position;
-            other.gameObject.GetComponent<Transform>().rotation = other.gameObject.GetComponent<Ingredient>().initialTransform.rotation;
-
             Bean.SetActive(true);
-
-            other.gameObject.SetActive(true);
+            correctIngredient = true;
         }
-        if (other.tag == "Carrot")
+        else if (other.CompareTag("Carrot"))
         {
-            other.gameObject.SetActive(false);
-            other.gameObject.GetComponent<Transform>().position = other.gameObject.GetComponent<Ingredient>().initialTransform.position;
-            other.gameObject.GetComponent<Transform>().rotation = other.gameObject.GetComponent<Ingredient>().initialTransform.rotation;
-
             Carrot.SetActive(true);
-
-            other.gameObject.SetActive(true);
+            correctIngredient = true;
         }
-        if (other.tag == "Chicken")
+        else if (other.CompareTag("Chicken"))
         {
-            other.gameObject.SetActive(false);
-            other.gameObject.GetComponent<Transform>().position = other.gameObject.GetComponent<Ingredient>().initialTransform.position;
-            other.gameObject.GetComponent<Transform>().rotation = other.gameObject.GetComponent<Ingredient>().initialTransform.rotation;
-
             Chicken.SetActive(true);
-
-            other.gameObject.SetActive(true);
+            correctIngredient = true;
         }
-        if (other.tag == "Branch")
+        else if (other.CompareTag("Branch"))
         {
-            other.gameObject.SetActive(false);
-            other.gameObject.GetComponent<Transform>().position = other.gameObject.GetComponent<Ingredient>().initialTransform.position;
-            other.gameObject.GetComponent<Transform>().rotation = other.gameObject.GetComponent<Ingredient>().initialTransform.rotation;
-
             Branch.SetActive(true);
+            correctIngredient = true;
+        }
 
-            other.gameObject.SetActive(true);
+        //tp to initial shelf
+        if (correctIngredient)
+        {
+            Ingredient ing = other.gameObject.GetComponent<Ingredient>();
+            other.transform.SetPositionAndRotation(ing.initialPosition, ing.initialRotation);
         }
     }
 }

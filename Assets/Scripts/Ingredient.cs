@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
-    public Transform initialTransform;
+    public Vector3 initialPosition;
+    public Quaternion initialRotation;
+
     // Start is called before the first frame update
     void Start()
     {
-        initialTransform = transform;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        initialPosition = transform.position;
+        initialRotation = transform.rotation;
     }
 }
