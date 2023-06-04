@@ -66,7 +66,8 @@ public class PotionManager : MonoBehaviour
                     !Carrot.activeInHierarchy && Chicken.activeInHierarchy && !Branch.activeInHierarchy)
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = Color.white;
-                    currentPotion=5;
+                    CauldronColor.SetActive(true);
+                    currentPotion =5;
                     UnactiveIngredients();
                 }
                 else
@@ -80,6 +81,7 @@ public class PotionManager : MonoBehaviour
                     !Carrot.activeInHierarchy && !Chicken.activeInHierarchy && !Branch.activeInHierarchy)
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = Color.blue;
+                    CauldronColor.SetActive(true);
                     currentPotion = 8;
                     UnactiveIngredients();
                 }
@@ -94,6 +96,7 @@ public class PotionManager : MonoBehaviour
                     Carrot.activeInHierarchy && !Chicken.activeInHierarchy && !Branch.activeInHierarchy)
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = skin;
+                    CauldronColor.SetActive(true);
                     currentPotion = 6;
                     UnactiveIngredients();
                 }
@@ -108,6 +111,7 @@ public class PotionManager : MonoBehaviour
                     !Carrot.activeInHierarchy && !Chicken.activeInHierarchy && Branch.activeInHierarchy)
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = Color.black;
+                    CauldronColor.SetActive(true);
                     currentPotion = 7;
                     UnactiveIngredients();
                 }
