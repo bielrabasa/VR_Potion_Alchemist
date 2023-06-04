@@ -15,6 +15,21 @@ TagManager:
   - PotionGreen
   - PotionRed
   - PotionYellow
+  - Cauldron
+  - Client1
+  - Feather
+  - Client4
+  - Carrot
+  - Branch
+  - Chicken
+  - Bean
+  - DryBranch
+  - Skull
+  - PotionWhite
+  - PotionSkin
+  - PotionBlack
+  - PotionDarkBlue
+  - Spoon
   layers:
   - Default
   - TransparentFX
