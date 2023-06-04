@@ -315,6 +315,10 @@ public class PotionManager : MonoBehaviour
         {
             Ingredient ing = other.gameObject.GetComponent<Ingredient>();
             other.transform.SetPositionAndRotation(ing.initialPosition, ing.initialRotation);
+            
+            //Stop object
+            other.attachedRigidbody.velocity = Vector3.zero;
+            other.attachedRigidbody.angularVelocity = Vector3.zero;
         }
     }
 }
