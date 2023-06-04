@@ -10,24 +10,16 @@ public class PotionCompleted : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("AAAAAAAAA"))
+        if (other.gameObject.CompareTag("XXXXXXX")) //the final potion should have the same tag as here
         {
             if (clientManager.ClientPhase[0] == true)
-            {
                 TestPotionCompleted1 = true;
-            }
             if (clientManager.ClientPhase[1] == true)
-            {
                 TestPotionCompleted2 = true;
-            }
             if (clientManager.ClientPhase[2] == true)
-            {
                 TestPotionCompleted3 = true;
-            }
             if (clientManager.ClientPhase[3] == true)
-            {
                 TestPotionCompleted4 = true;
-            }
         }
      
     }

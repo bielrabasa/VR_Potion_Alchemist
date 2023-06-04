@@ -16,7 +16,10 @@ public class NPCMovement : MonoBehaviour
 
     public Transform point1;
     public Transform point2;
-    public GameObject planeDialog;
+    public GameObject DialogClient1;
+    public GameObject DialogClient2;
+    public GameObject DialogClient3;
+    public GameObject DialogClient4;
     public PotionCompleted potionCompleted;
 
     public float movementSpeed = 2.5f;
@@ -24,6 +27,10 @@ public class NPCMovement : MonoBehaviour
     private void Start()
     {
         ClientPhase[0] = true;
+        DialogClient1.SetActive(false);
+        DialogClient2.SetActive(false);
+        DialogClient3.SetActive(false);
+        DialogClient4.SetActive(false);
     }
     private void Update()
     {
@@ -34,14 +41,16 @@ public class NPCMovement : MonoBehaviour
             {
                 MoveToPosition(firstNPC, point1.position);
                 if (firstNPC.position == point1.position) //this is to make sure that first NPC don't return to point 1 after the trigger is activated and meking impossible for first NPC to go to point 2
-                {
                     isFirstNPCMoving = false;
-                }
             }
+            
+            if (firstNPC.position == point1.position)
+                DialogClient1.SetActive(true);                
 
             if (potionCompleted.TestPotionCompleted1==true)  // Moves first NPC outside if the trigger is activated
             {
                 MoveToPosition(firstNPC, point2.position);
+                DialogClient1.SetActive(false);
                 if (firstNPC.position == point2.position)
                     potionCompleted.TestPotionCompleted1 = false;
             }
@@ -61,14 +70,16 @@ public class NPCMovement : MonoBehaviour
             {
                 MoveToPosition(secondNPC, point1.position);
                 if (secondNPC.position == point1.position)
-                {
                     isSecondNPCMoving = false;
-                }
             }
+
+            if (secondNPC.position == point1.position)
+                DialogClient2.SetActive(true);
 
             if (potionCompleted.TestPotionCompleted2 == true)
             {
                 MoveToPosition(secondNPC, point2.position);
+                DialogClient2.SetActive(false);
                 if (secondNPC.position == point2.position)
                     potionCompleted.TestPotionCompleted2 = false;
             }
@@ -88,17 +99,19 @@ public class NPCMovement : MonoBehaviour
             {
                 MoveToPosition(thirdNPC, point1.position);
                 if (thirdNPC.position == point1.position)
-                {
                     isThirdNPCMoving = false;
-                }
             }
+            if (thirdNPC.position == point1.position)
+                DialogClient3.SetActive(true);
 
             if (potionCompleted.TestPotionCompleted3 == true)
             {
                 MoveToPosition(thirdNPC, point2.position);
+                DialogClient3.SetActive(false);
                 if (thirdNPC.position == point2.position)
                     potionCompleted.TestPotionCompleted3 = false;
             }
+
 
             if (thirdNPC.position == point2.position)
             {
@@ -114,20 +127,23 @@ public class NPCMovement : MonoBehaviour
             {
                 MoveToPosition(fourthNPC, point1.position);
                 if (fourthNPC.position == point1.position)
-                {
                     isFourthNPCMoving = false;
-                }
             }
+
+            if (fourthNPC.position == point1.position)
+                DialogClient4.SetActive(true);
 
             if (potionCompleted.TestPotionCompleted4 == true)
             {
                 MoveToPosition(fourthNPC, point2.position);
+                DialogClient4.SetActive(false);
                 if (fourthNPC.position == point2.position)
                     potionCompleted.TestPotionCompleted4 = false;
             }
 
             //if (thirdNPC.position == point2.position)
             //{
+            //    ClientPhase[3] = false;
             //    //Finish
             //}
         }
