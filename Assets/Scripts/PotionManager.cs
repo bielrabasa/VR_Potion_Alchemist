@@ -65,64 +65,72 @@ public class PotionManager : MonoBehaviour
                 if(!DryBranch.activeInHierarchy && !Skull.activeInHierarchy && Feather.activeInHierarchy && !Bean.activeInHierarchy &&
                     !Carrot.activeInHierarchy && Chicken.activeInHierarchy && !Branch.activeInHierarchy)
                 {
-                    CauldronColor.GetComponent<MeshRenderer>().material.color = Color.white;
-                    CauldronColor.SetActive(true);
-                    currentPotion =5;
+                    currentPotion = 5;
                     UnactiveIngredients();
                 }
                 else
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = blue;
+                    CauldronColor.SetActive(true);
                 }                
-                CauldronColor.SetActive(true);
                 break;
             case 1:
                 if (DryBranch.activeInHierarchy && !Skull.activeInHierarchy && Feather.activeInHierarchy && Bean.activeInHierarchy &&
                     !Carrot.activeInHierarchy && !Chicken.activeInHierarchy && !Branch.activeInHierarchy)
-                {
-                    CauldronColor.GetComponent<MeshRenderer>().material.color = Color.blue;
-                    CauldronColor.SetActive(true);
+                {                    
                     currentPotion = 8;
                     UnactiveIngredients();
                 }
                 else
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = purple;
+                    CauldronColor.SetActive(true);
                 }                
-                CauldronColor.SetActive(true);
                 break;
             case 2:
                 if (!DryBranch.activeInHierarchy && !Skull.activeInHierarchy && !Feather.activeInHierarchy && Bean.activeInHierarchy &&
                     Carrot.activeInHierarchy && !Chicken.activeInHierarchy && !Branch.activeInHierarchy)
-                {
-                    CauldronColor.GetComponent<MeshRenderer>().material.color = skin;
-                    CauldronColor.SetActive(true);
+                {                    
                     currentPotion = 6;
                     UnactiveIngredients();
                 }
                 else
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = yellow;
+                    CauldronColor.SetActive(true);
                 }
-                CauldronColor.SetActive(true);
                 break;
             case 3:
                 if (!DryBranch.activeInHierarchy && Skull.activeInHierarchy && Feather.activeInHierarchy && !Bean.activeInHierarchy &&
                     !Carrot.activeInHierarchy && !Chicken.activeInHierarchy && Branch.activeInHierarchy)
-                {
-                    CauldronColor.GetComponent<MeshRenderer>().material.color = Color.black;
-                    CauldronColor.SetActive(true);
+                {                    
                     currentPotion = 7;
                     UnactiveIngredients();
                 }
                 else
                 {
                     CauldronColor.GetComponent<MeshRenderer>().material.color = red;
+                    CauldronColor.SetActive(true);
                 }
-                CauldronColor.SetActive(true);
                 break;
             case 4:
                 CauldronColor.GetComponent<MeshRenderer>().material.color = green;
+                CauldronColor.SetActive(true);
+                break;
+            case 5:
+                CauldronColor.GetComponent<MeshRenderer>().material.color = Color.white;
+                CauldronColor.SetActive(true);
+                break;
+            case 6:
+                CauldronColor.GetComponent<MeshRenderer>().material.color = skin;
+                CauldronColor.SetActive(true);
+                break;
+            case 7:
+                CauldronColor.GetComponent<MeshRenderer>().material.color = Color.black;
+                CauldronColor.SetActive(true);
+                break;
+            case 8:
+                CauldronColor.GetComponent<MeshRenderer>().material.color = Color.blue;
                 CauldronColor.SetActive(true);
                 break;
             case 9:
